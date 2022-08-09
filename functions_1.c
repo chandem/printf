@@ -1,5 +1,5 @@
-#include"main.h"
-#include<stdarg.h>
+#include "main.h"
+#include <stdarg.h>
 /**
  *function_manager - function manager
  *@c: character to find
@@ -49,12 +49,9 @@ int _switch(char c, va_list arg)
 		case 'R':
 			cont += print_rot13(arg);
 			break;
-		case 'S':
-			cont += print_STR(arg);
+		case 's':
+			cont += print_string(arg);
 			break;
-                case 's':
-                        cont+= print_str(arg);
-                        break;
 		case 'u':
 			cont += print_unsign(arg, 10);
 			break;
