@@ -49,7 +49,7 @@ int _switch(char c, va_list arg)
 		case 'R':
 			cont += print_rot13(arg);
 			break;
-		case 's':
+		case 'S':
 			cont += print_string(arg);
 			break;
 		case 'u':
