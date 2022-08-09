@@ -31,7 +31,7 @@ int _switch(char c, va_list arg)
 	switch (c)
 	{
 		case 'b':
-			cont += print_unsign(arg,2);
+			cont += print_unsign(arg, 2);
 			break;
 		case 'c':
 			cont += print_character(arg);
@@ -41,7 +41,7 @@ int _switch(char c, va_list arg)
 			cont += print_sign(arg, 10);
 			break;
 		case 'o':
-			cont += print_unsign(arg,8);
+			cont += print_unsign(arg, 8);
 			break;
 		case 'r':
 			cont += print_rev(arg);
