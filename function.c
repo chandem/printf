@@ -111,7 +111,19 @@ else if (*str == '\0')
 	return (-1);
 
 for (i = 0; str[i]; i++)
-	_putchar(str[i]);
+	{
+	if ((str[i] < 32 && str[i] > 0) || str[i] >= 127)
+	{
+		_putchar('\\');
+		_putchar('x');
+		if (i < 16)
+			_putchar('0');
+
+		print_unsignedIntToHex(str[i], 'a');
+	}
+	else
+		_putchar(str[i]);
+}
 
 return (i);
 }
