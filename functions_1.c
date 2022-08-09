@@ -59,10 +59,10 @@ int _switch(char c, va_list arg)
 			cont += print_unsign(arg, 10);
 			break;
 		case 'x':
-			cont += print_hex(arg);
+			cont += print_base16_upper_lower(arg, "0123456789abcdef");
 			break;
 		case 'X':
-			cont += print_Hex(arg);
+			cont += print_base16_upper_lower(arg, "0123456789ABCDEF");
 			break;
 		default:
 			cont = -1;
