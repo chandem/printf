@@ -31,7 +31,7 @@ int _switch(char c, va_list arg)
 	switch (c)
 	{
 		case 'b':
-			cont += print_unsignedToBinary(arg);;
+			cont += print_unsignedToBinary(arg);
 			break;
 		case 'c':
 			cont += print_character(arg);
