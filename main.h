@@ -15,7 +15,6 @@ int _switch(char c, va_list arg);
 int print_character(va_list arg);
 int print_sign(va_list arg, int base);
 int print_unsign(va_list arg, int base);
-int print_string(va_list arg);
 int print_ptr(va_list arg);
 int print_rot13(va_list arg);
 int print_rev(va_list arg);
@@ -24,6 +23,7 @@ int loop_format(va_list arg, const char *string);
 int call_function_manager(char aux, va_list arg);
 int check_percent(int *flag, char aux);
 int print_STR(va_list arg);
+int print_str(va_list arg);
 int print_unsignedIntToHex(unsigned int num, char _case);
 
 #endif
