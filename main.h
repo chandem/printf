@@ -1,7 +1,9 @@
 #ifndef _MAIN_
 #define _MAIN_
 
-#include <stdarg.h>
+#include<stdarg.h>
+#include<stdlib.h>
+#include<unistd.h>
 
 int _putchar(char c);
 void _puts(char *str);
